@@ -6,9 +6,10 @@ function aumentarContador(){ // essa função é chamada automaticamente pela du
 	contador.textContent = numero; // muda o texto do conteúdo do elemento "contador" para o novo valor da variável "número"
 }
 
-setInterval(aumentarContador, 1000); // essa função atrela "disparos automáticos" de uma função (primeiro parâmetro) com um tempo (segundo parâmetro) dado em milissegundos
+var intervalo = setInterval(aumentarContador, 1000); // essa função atrela "disparos automáticos" de uma função (primeiro parâmetro) com um tempo (segundo parâmetro) dado em milissegundos
 // em outras palavras... nessa caso, a função "aumentarContador" será chamada automaticamente a cada 1 segundo (ou 1000 milissegundos).
-
+// uma dica, cuidar com a taxa de atualização, talvez com tempos muito pequenos (1 milisseugndo) não corresponda à realidade, uma solução seria contar com tempos um pouco maiores (10 milissegundos por exemplo).
+// a função fica ativa (repetindo) até a chamar a função "clearInterval(intervalo)"
 
 function mudarEstado(){ // função de exemplo
 	var b1 = document.getElementById("botao1");
