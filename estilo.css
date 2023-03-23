@@ -1,0 +1,24 @@
+@font-face { /*essa parte serve para "importar" uma fonte*/
+	font-family: "DS-Digital"; /*nome da fonte*/
+	src: url("/ds_digital/DS-DIGI.TTF"); /*caminho onde os arquivos da fonte se encontram*/
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+    font-family: "DS-Digital"; /*aplicação efetiva da fonte*/
+    color: rgb(0, 0, 255);  
+    font-size: 20px;
+    text-align: center;
+}
+
+#contador{
+    font-size: 50px;
+}
+
+
+button{
+font-size: 20px;
+margin: 0 20px;
+padding: 10px 20px;
+font-family: "DS-Digital";
+}
